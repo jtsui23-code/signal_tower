@@ -95,6 +95,17 @@ class Game:
         # Spawns enemies
         self.spawnEnemies(dt)
 
+        # Add coins +1 for every defeated enemy
+        self.coin += sum(1 for e in self.enemies if e.hp <= 0)
+
+        # Lose health for every enemy that passes -2 for super enemies -1 for standard enemies
+        for e in self.enemies:
+            if isinstance(e, SuperEnemy) and e.distance >= self.path.totalLength:
+                self.health -= 2
+            elif isinstance(e, Enemy) and e.distance >= self.path.totalLength:
+                self.health -= 1
+
+
         # If enemy doesn't have health or reached end of the path despawn them
         self.enemies = [e for e in self.enemies if e.hp > 0]
         self.enemies = [e for e in self.enemies if e.distance < self.path.totalLength]

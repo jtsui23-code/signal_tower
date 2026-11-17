@@ -9,12 +9,11 @@ class Tower:
         self.fireRate = fr
         self.dmg = dmg
         self.cooldown = cooldown
-        self.cooldownInterval = 1.0
 
     def updateCooldown(self, dt):
         self.cooldown -= dt
         if self.cooldown <= 0:
-            self.cooldown = self.cooldownInterval
+            self.cooldown = self.fireRate
             return True
         return False
 
