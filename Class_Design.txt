@@ -1,0 +1,60 @@
+Entities:
+- Tower
+- Enemy
+- Path
+- Game
+
+Relationship:
+Game -> Tower
+Game -> Path
+Game -> Enemy
+
+Requirement Scope:
+- 2 Tower and 2 Enemy Type
+- Basic & Strong variants of tower and enemy
+- Towers will cost Coins to place
+- Game will have only one Level
+- Graphics Will be Simple Shapes like squares and circles
+
+
+Classes:
+
+Class Game:
+- Enemies: List<Enemy>
+- Path
+- Coin: Int
+- Health: Int
+- dt: Float
+- Towers: List<Tower>
+- Screen
+- BuildPads: List<(x,y)>
+- HandleClick(position:(x,y))
+- Update()
+- Render()
+- SpawnEnemies()
+
+
+Class Tower:
+- Position: (x,y)
+- Range: Int
+- Fire Rate: Float
+- DMG: Int
+- Cooldown:Float
+- UpdateCoolDown(dt)
+- Fire(List<Enemy>,path) // Tower picks which enemy 
+
+Class Enemy:
+- Distance: Float
+- Speed Float
+- Health: Int
+- UpdateDistance(dt)
+- UpdateHP(DMG:Int) 
+
+Class Path:
+- Positions: List<(x,y)>
+- TotalLength: Float
+- CalculatePosition(d:distance) -> (x,y)
+
+
+
+
