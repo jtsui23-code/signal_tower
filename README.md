@@ -9,11 +9,8 @@ All graphics are simple shapes drawn with Pygame, so no image files are needed.
 
 # Showcase:
 
+<img width="800" height="800" alt="signalTower2" src="https://github.com/user-attachments/assets/6eed2d55-95b4-4cbf-a014-96ece92a80a9" />
 
-https://github.com/user-attachments/assets/790a9d41-159b-41d6-bc00-06d58d5f6fac
-
-
-https://github.com/user-attachments/assets/a9bb4812-0ffe-4e14-971f-acbaee5ab088
 
 
 ## Requirements
