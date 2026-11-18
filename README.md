@@ -6,13 +6,6 @@ Enemies travel along a winding path toward the end of the map. Build towers on t
 
 All graphics are simple shapes drawn with Pygame, so no image files are needed.
 
-
-# Showcase:
-
-<img width="600" height="400" alt="Signal Tower Gameplay" src="https://github.com/user-attachments/assets/6eed2d55-95b4-4cbf-a014-96ece92a80a9" />
-
-
-
 ## Requirements
 
 - **Python 3.10 or newer** (the game uses `itertools.pairwise`, which was added in 3.10)
