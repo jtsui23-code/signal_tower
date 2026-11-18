@@ -6,6 +6,16 @@ Enemies travel along a winding path toward the end of the map. Build towers on t
 
 All graphics are simple shapes drawn with Pygame, so no image files are needed.
 
+## Showcase
+
+<img width="1492" height="967" alt="image" src="https://github.com/user-attachments/assets/6c7c1992-ff2e-4c98-8e7c-26440e1de1cd" />
+
+<img width="1492" height="970" alt="image" src="https://github.com/user-attachments/assets/824f8768-33fe-4f23-a339-add611c3200a" />
+
+<img width="1487" height="970" alt="image" src="https://github.com/user-attachments/assets/86b824e0-d52e-49e5-8092-9e6e161ae30a" />
+
+
+
 ## Requirements
 
 - **Python 3.10 or newer** (the game uses `itertools.pairwise`, which was added in 3.10)
