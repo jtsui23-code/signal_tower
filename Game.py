@@ -15,6 +15,10 @@ pygame.init()
 class Game:
 
     def __init__(self, fps=60, health=30):
+
+        # Constructor only calls reset method to avoid code duplication since reset method initializes all of the member 
+        # variables fo the Game Class to restart the game whenver the player loses. Therefore constructor just needs to 
+        # call the reset method.
         self.reset(fps=fps, health=health)
 
     def run(self):
